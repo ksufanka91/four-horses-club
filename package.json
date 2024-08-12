@@ -1,0 +1,14 @@
+{
+  "name": "yandex-frontend-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

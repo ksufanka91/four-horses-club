@@ -1,0 +1,24 @@
+.slider-arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--button-color) url("../images/arrow.svg") no-repeat calc(50% - 2px);
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color .4s ease;
+
+    @media (hover: hover) {
+        &:not(.swiper-button-disabled):hover {
+            background-color: var(--main-color);
+        }
+    }
+
+    &_next {
+        transform: rotate(180deg);
+    }
+
+    &.swiper-button-disabled {
+        background-color: #D6D6D6;
+        cursor: default;
+    }
+}
