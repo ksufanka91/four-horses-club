@@ -1,0 +1,33 @@
+.change-animation {
+    display: inline-block;
+    overflow: hidden;
+    height: 1.2em;
+    
+    @media (max-width: 850px) {
+        height: 2.4em;
+    }
+
+    &__inner {
+        display: inline-block;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    &__item {
+        display: block;
+
+        @media (max-width: 850px) {
+            max-width: 560px;
+        }
+    }
+}
+
+@keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
