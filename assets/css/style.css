@@ -259,9 +259,11 @@ h3, .h3 {
 }
 .change-animation__item {
   display: block;
+  white-space: nowrap;
 }
 @media (max-width: 850px) {
   .change-animation__item {
+    white-space: normal;
     max-width: 560px;
   }
 }
